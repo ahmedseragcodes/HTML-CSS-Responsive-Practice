@@ -65,6 +65,7 @@ h1, h2, h3{
 }
 h1{
     font-size:5rem;
+    color: #FAEBD7;
 }
 h2{
     font-size:4rem;
@@ -92,6 +93,17 @@ header{
     background-repeat: no-repeat;
     background-position: bottom;
     text-align:center;
+}
+button {
+    padding: 1.5rem;
+    background-color: #006400;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+body button:hover {
+    background-color: white;
+    color: #006400;
 }
 nav{
     display:flex;
@@ -195,12 +207,60 @@ footer h3{
     #about div {
         width: 30%;
         margin-top: 35%;
-        margin-left: 30%;
-        
+    }
+    .container .text div {
+        width: 70%;
+    }
+    .img-wrapper {
+        width: 70%;
+    }
+    .container p {
+        text-align: left;
     }
 }
 @media(max-width: 500px){
-    body {
-        background-color: red;
+    h1 {
+        color: white;
+        font-weight: bold;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 20%;
+    }
+    .links {
+        width: 100%;
+    }
+    #about {
+        justify-content: flex-start;
+    }
+    #about div {
+        margin-left: 10%;
+        width: 40%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container div {
+        width: 80%;
+        align-items: center;
+    }
+    .bg{
+        height: 60vh;
+    }
+    .footer-parent {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .left, .right {
+        width: 80%;
+    }
+    .copyright {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 1%;
     }
 }
