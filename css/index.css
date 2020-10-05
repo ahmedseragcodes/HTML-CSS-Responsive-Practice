@@ -1,0 +1,22 @@
+html {
+    font-size: 62.5%;
+}
+header img {
+    height: 10rem;
+    width: 10rem;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.header-nav {
+    margin-left: 15rem;
+}
+.header-nav a {
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+#intro-section {
+    background-image: url("images/header.jpg");
+}
